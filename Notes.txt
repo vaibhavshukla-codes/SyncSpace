@@ -1,1 +1,29 @@
-SyncSpace — for seamless communication.
+<------------------------------------SyncSpace — for seamless communication----------------------------------------->
+#Sockets:-
+->A socket is one end of connection.
+->end point: IP address + Port Number 
+
+#Protocals:-
+->communication rules
+1: TCP(Transmission Control Protocal(Connection based Protocal)): Reliable but Slower
+2: UDP(User Datagram Protocal(Connection less Protocal)): Faster but not Reliable
+
+#WebRTC for Video Communication:-
+->Web Real Time Communication
+-> It is establishes a bidirectional connection b/w two or more devices.
+-> It is a bidirection Protocal means data can flow in both direction.
+-> It is used for transferring audio,video,chat.
+
+->WebRTC is already availabe in the browser(like chrome) in the form of APIs.
+-WebRTC APIs:
+1: Media Stream
+2: RTCPeerConnection
+3: RTCDataChannel
+
+-> How does it works ?
+1: Signalling
+2: Connecting
+3: Securing
+4: Communicating
+
+Note: Without WebRTC: We can make a server between two devices which will perform video conferencing.
