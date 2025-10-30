@@ -1,1 +1,1 @@
-# A Mern Full Stack SyncSpace — for seamless communication.
+# A Mern Full Stack SyncSpace Website — for seamless communication.
