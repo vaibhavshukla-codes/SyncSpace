@@ -1,1 +1,1 @@
-# A Mern Full Stack SyncSpace Website — for seamless communication.
+#SyncSpace — A MERN Full-Stack Web App for Seamless Real-Time Communication
