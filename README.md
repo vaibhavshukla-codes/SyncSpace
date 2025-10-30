@@ -1,1 +1,1 @@
-#SyncSpace — A MERN Full-Stack Web App for Seamless Real-Time Communication
+# SyncSpace — A MERN Full-Stack Web App for Seamless Real-Time Communication
