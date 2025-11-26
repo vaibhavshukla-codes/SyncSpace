@@ -1,14 +1,15 @@
 <------------------------------------SyncSpace — for seamless communication----------------------------------------->
 #Sockets:-
+->A communication endpoint between two programs on different computers.
 ->A socket is one end of connection.
-->end point: IP address + Port Number 
+->End point(Socket Address) = IP address + Port Number 
 
 #Protocals:-
 ->communication rules
 1: TCP(Transmission Control Protocal(Connection based Protocal)): Reliable but Slower
 2: UDP(User Datagram Protocal(Connection less Protocal)): Faster but not Reliable
 
-#WebRTC for Video Communication:-
+#WebRTC for Video Communication:-(based on TCP/UDP Protocal)
 ->Web Real Time Communication
 -> It is establishes a bidirectional connection b/w two or more devices.
 -> It is a bidirection Protocal means data can flow in both direction.
@@ -27,3 +28,56 @@
 4: Communicating
 
 Note: Without WebRTC: We can make a server between two devices which will perform video conferencing.
+
+
+🚀 WebRTC Kya Hota Hai? (Hinglish Explanation)
+WebRTC (Web Real-Time Communication) ek technology hai jo browser ke andar hi live audio, video aur data sharing allow karti hai — bina kisi extra app, plugin, ya software ke.
+
+Matlab:
+➡️ Browser → Browser
+➡️ Live video call / audio call / screen share
+➡️ Directly, fast aur secure
+
+🎯 Simple Definition (Hinglish)
+WebRTC ek aisi technology hai jo do devices ko directly connect karke unke beech real-time communication karne deti hai — jaise video calling, voice calling, file sharing, etc.
+
+
+<-------------------------WebRTC Architectures------------------->
+1: P2P (Peer To Peer)
+2: SFU (Selective Forwarding Unit)
+3: MCU (Multi Point Control Unit)
+
+1: P2P:(1:1 calls)
+->In P2P Architecture each computer will be connected to other computers of P2P connection.
+->We use P2P Architecture when there are less number of computers are connected each other using P2P connection.
+->In P2P Architecture a single node(computer) can get multiple request so at that time computer might not be sufficient
+  to handle it therefore we use other Architectures.
+-> n(nodes) uploads and n(nodes) downloads.
+
+2: SFU:(Group calls)
+->In SFU each node(computer) will send it's data to the central server and that server will send the data of other nodes to each node.
+->Server holds upload load and client holds download load.
+->1 upload and n(nodes) download.
+
+Inshort: Single upload and multiple downloads.(for each node)
+
+3: MCU:(Large conferences)
+->Each node(computer) sends data to the server and server collects each node data and combine it then returns combined single stream   (data) to each node.
+-> Server holds maximum load.
+-> 1 upload and 1 download.
+
+Inshort: Single upload and single download.(for each node)
+
+
+
+#--------Contents----------#
+->MCU/SFU/P2P Short Intro
+->What's WebRTC and we need scokio
+->Is SocketIO really Sockets or long polling ?
+->TECHNOLOGIES
+->SETUP, MongoDB, backend,frontend
+->Backend coding
+->Socket io coding (our server)
+->frontend -> Using Normal css, styled components, material icons, material ui etc, angular approach.
+->Video Call Feature
+->Project Completed.
