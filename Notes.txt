@@ -81,3 +81,52 @@ Inshort: Single upload and single download.(for each node)
 ->frontend -> Using Normal css, styled components, material icons, material ui etc, angular approach.
 ->Video Call Feature
 ->Project Completed.
+
+
+#CORS:-
+* Cross Origin Resource Sharing
+* CORS ek security feature hai jo browsers implement karte hain, taa ki aapka website kisi unknown server se bina permission ke data fetch na kare.
+* Ek website dusri website ke server se data tabhi le sakti hai jab server allow kare.
+* Agar server allow nahi kare → browser request ko block kar dega.
+* This block ka error = CORS error
+->In project -> npm i cors --save
+
+#Dependencies:-
+Express, mongoose, Bcrypt, http-status, nodemon(dev dependency), cors.
+Backend -> socket.io
+Frontend -> socket-io-client
+Note: nodemon is used to restart the server with new changes.
+
+bcrypt
+* Bcrypt is a password-hashing library used to securely store passwords in a database.
+* It converts plain text passwords (like "123456") into a long, irreversible hash.
+* Bcrypt is used for password incryption and decryption.
+
+http-status
+Utility to interact with HTTP status codes.
+
+socket.io
+* Socket.IO is a JavaScript library that enables REAL-TIME, two-way communication between client and server.
+* Socket.IO enables real-time bidirectional event-based communication. It consists of:
+* a Node.js server (this repository)
+* a Javascript client library for the browser (or a Node.js client)
+
+socket.io-client
+* Socket.IO Client is the frontend-side library that connects your browser/app to a Socket.IO server.
+* It allows real-time, two-way communication between:
+Browser ↔ ServerFrontend ↔ Backend
+* Everything happens instantly — no reloads, no delays.
+
+Note:- 
+->replaced "type": “commonJS” with "type": "module" in package.json
+->modified:
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "prod": "pm2 src/app.js"
+  }
+
+->import { createServer } from 'node:http';
+ createServer Node.js ka built-in function hota hai jo HTTP server banata hai.
+* createServer() = Node.js ka function jo ek HTTP server banata hai.
+* Ye server request receive karta hai aur response send karta hai.
