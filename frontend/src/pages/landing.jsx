@@ -15,11 +15,19 @@ export default function LandingPage() {
 
         <div className='navList'>
 
-         
+          <p>Join as Guest</p>
+          <p>Register</p>
+          <div role='button'>
+            <p>Login</p>
+          </div>
 
         </div>
 
       </nav>
+
+      <div className="landingMainContainer">
+        
+      </div>
 
     </div>
   )
