@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css";
+import {Link} from 'react-router-dom';
 
 export default function LandingPage() {
   return (
@@ -26,6 +27,24 @@ export default function LandingPage() {
       </nav>
 
       <div className="landingMainContainer">
+            
+        <div>
+          <h1>Your Space to <span style={{ color: "#22D3EE" }}>Meet & Connect</span></h1>
+          <p>Connect, collaborate, and share — all in your SyncSpace</p>
+          
+          <div role='button'>
+                
+            <Link to={"/home"}>Get Started</Link>
+
+          </div>
+
+        </div>
+        
+        <div>
+           
+          <img src="/mobile.png" alt="" />
+
+        </div>
         
       </div>
 
